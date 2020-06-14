@@ -66,7 +66,7 @@ printf "\e[1;92m[\e[0m\e[1;77m✓\e[0m\e[1;92m] Search started: \e[0m\e[1;77m %s
 printf "\e[1;92m ------------- Main: ------------- %s\n \e[0m" 
 
 #facebook.com
-printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Facebook: \e[0m"
+printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m]Facebook: \e[0m"
 check=$(curl -s "https://www.facebook.com/$username" -L -H "Accept-Language: en" | grep -o 'not found'; echo $?)
 if [[ $check == *'1'* ]]; then
 printf "\e[1;92m ✓\e[0m https://www.facebook.com/%s\n" $username
