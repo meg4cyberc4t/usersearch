@@ -11,11 +11,12 @@ Installation is easy, done in a couple of commands
 
 git clone https://github.com/megacybercat/usersearch;
 cd usersearch;
-sudo chmod +x usersearch
+sudo chmod +x usersearch;
+sudo apt install curl -y
 
 # How to use
 ./usersearch.sh
 
 # What are the benefits?
 
-The program itself checks for the presence of the necessary dependencies (in case of their absence, it will be proposed to install them) and the Internet. There is a lock on an inappropriate nickname. The search for social networks is distributed from important (Main) to non-singularly popular (Last). Found active links are written to a file, which can then be read.
+The program itself checks for the presence of the necessary dependencies (in case of their absence, it will be proposed to install them). There is a lock on an inappropriate nickname. The search for social networks is distributed from important (Main) to non-singularly popular (Last). Found active links are written to a file, which can then be read.
