@@ -5,16 +5,6 @@
 printf "\e[1;32m[/] Connected [/]\e[1;32m"
 printf "
 "
-##Check internet connection 
-status_inet=`ping 8.8.8.8 -c 1 -w 2 | grep " 1 received"`
-if [[ -z "$status_inet" ]]; then
-  clear
-  printf "\e[1;31m[×] Problems connecting to the internet. Repeat later! [×]\e[1;31m"
-  printf "
-"
-  exit 1
-fi
-
 ##Check "curl"
 check_curl_ru=`apt-cache policy curl | grep 'Установлен'`
 check_curl_en=`apt-cache policy curl | grep 'Installed'`
