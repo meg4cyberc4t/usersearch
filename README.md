@@ -7,9 +7,11 @@ Find usernames on popular social networks. The program has a check of the necess
 
 # How to install
 Installation is easy, done in a couple of commands
-# git clone https://github.com/megacybercat/usersearch
-# cd usersearch
-# sudo chmod +x usersearch
+
+
+git clone https://github.com/megacybercat/usersearch
+cd usersearch
+sudo chmod +x usersearch
 
 # How to use
-# ./usersearch.sh
+./usersearch.sh
