@@ -48,7 +48,7 @@ read -p $'\e[1;32m[?] Enter Username:\e[0m ' username
 
 ##Check "Invalid name"
 if [[ -z $username ]]; then 
-printf "\e[1;31m[\e[0m\e[1;31m!\e[1;31m]\e[1;31m Invalid name!\e[0m\e[1;31m" $username
+printf "\e[1;31m[\e[0m\e[1;31m!\e[1;31m]\e[1;31m Invalid name!\e[0m\e[1;31m\e[0m" $username
 printf "
 "
 exit 1
@@ -63,7 +63,7 @@ printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m✓\e[0m\e[1;92m] Search started: \e[0m\e[1;77m %s\e[0m\e[1;92m  \e[0m\n"
 
 ##Main
-printf "\e[1;92m ------------- Main: ------------- %s\n" 
+printf "\e[1;92m ------------- Main: ------------- %s\n \e[0m" 
 
 #facebook.com
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Facebook: \e[0m"
